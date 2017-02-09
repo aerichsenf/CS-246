@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <TextView
+        android:text="Enter your favorite scripture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/bookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:hint="@string/bookText"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/chapterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/bookText"
+        android:layout_alignEnd="@+id/bookText"
+        android:layout_marginTop="15dp"
+        android:hint="@string/chapterText"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/verseText"
+        android:hint="@string/verseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/chapterText"
+        android:layout_alignStart="@+id/chapterText"
+        android:layout_marginTop="11dp"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:text="@string/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verseText"
+        android:layout_alignEnd="@+id/verseText"
+        android:layout_marginTop="10dp"
+        android:onClick="sendMessage" />
+
+    <Button
+        android:text="@string/loadButton"
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/submitButton"
+        android:layout_alignStart="@+id/verseText"
+        android:onClick="onLoadScripture" />
+
+
+
+</RelativeLayout>

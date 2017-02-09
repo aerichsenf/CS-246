@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FavoriteScripture</string>
+    <string name="bookText">Book</string>
+    <string name="chapterText">Chapter</string>
+    <string name="verseText">Verse</string>
+    <string name="submitButton">Submit</string>
+    <string name="saveButton">Save</string>
+    <string name="loadButton">Load</string>
+
+</resources>
